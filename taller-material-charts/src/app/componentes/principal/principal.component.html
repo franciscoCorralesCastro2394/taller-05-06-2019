@@ -42,6 +42,8 @@
 
                 <img mat-card-image src="assets/graph1.png" alt="Photo of a Shiba Inu">
                 <mat-card-content>
+
+
                     <h3>
                         <mat-icon>layers</mat-icon>
                         Lista de Notas</h3>
@@ -73,6 +75,16 @@
                         </table>
 
                         <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                    </div>
+
+
+                </mat-card-content>
+                <mat-card-content>
+                    <div class="row">
+                        <h4 class="ml-4">Salarios Programación</h4>
+                        <ngx-charts-area-chart [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                            [yAxisLabel]="yAxisLabel" [autoScale]="autoScale" (select)="onSelect($event)">
+                        </ngx-charts-area-chart>
                     </div>
                 </mat-card-content>
             </mat-card>
