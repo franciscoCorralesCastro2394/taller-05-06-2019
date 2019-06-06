@@ -8,6 +8,15 @@ import { MatButtonModule } from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
+import {MatListModule} from '@angular/material/list';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +26,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     AppRoutingModule,
     BrowserAnimationsModule, 
     MatButtonModule, 
-    MatSidenavModule
+    MatSidenavModule,
+    MatTooltipModule, MatIconModule, MatToolbarModule,MatSnackBarModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
