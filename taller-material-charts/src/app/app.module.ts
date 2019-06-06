@@ -17,6 +17,12 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatPaginatorModule } from '@angular/material';
+import {MatInputModule} from '@angular/material';
+
+
 
 
 @NgModule({
@@ -28,7 +34,7 @@ import {MatCardModule} from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    MatButtonModule, 
+    MatButtonModule, MatTableModule,MatFormFieldModule,MatPaginatorModule,MatInputModule,
     MatSidenavModule,
     MatTooltipModule, 
     MatCardModule,
